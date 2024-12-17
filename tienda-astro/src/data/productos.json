@@ -1,0 +1,91 @@
+{
+  "productos": {
+    "tablas": [
+      {
+        "id": "t1",
+        "nombre": "Baker Team Logo",
+        "tipo": "Street",
+        "medida": 8.0,
+        "marca": "Baker",
+        "precio": 60.00,
+        "imagen": "/images/baker.webp",
+        "categoria": "tabla"
+      },
+      {
+        "id": "t2",
+        "nombre": "Element Section",
+        "tipo": "Street",
+        "medida": 8.25,
+        "marca": "Element",
+        "precio": 65.00,
+        "imagen": "/images/element.webp",
+        "categoria": "tabla"
+      }
+    ],
+    "ruedas": [
+      {
+        "id": "r1",
+        "nombre": "Spitfire Formula Four",
+        "tipo": "Street",
+        "medida": 52,
+        "marca": "Spitfire",
+        "precio": 35.00,
+        "imagen": "/images/spit.webp",
+        "categoria": "rueda"
+      },
+      {
+        "id": "r2",
+        "nombre": "Bones STF V5",
+        "tipo": "Park",
+        "medida": 54,
+        "marca": "Bones",
+        "precio": 40.00,
+        "imagen": "/images/delfino.webp",
+        "categoria": "rueda"
+      }
+    ],
+    "ejes": [
+      {
+        "id": "e1",
+        "nombre": "Independent Stage 11",
+        "tipo": "Standard",
+        "medida": 149,
+        "marca": "Independent",
+        "precio": 55.00,
+        "imagen": "/images/independent.webp",
+        "categoria": "eje"
+      },
+      {
+        "id": "e2",
+        "nombre": "Thunder Hollow Lights",
+        "tipo": "Low",
+        "medida": 147,
+        "marca": "Thunder",
+        "precio": 50.00,
+        "imagen": "/images/thunder.webp",
+        "categoria": "eje"
+      }
+    ],
+    "rodamientos": [
+      {
+        "id": "b1",
+        "nombre": "Bones Reds",
+        "tipo": "ABEC 7",
+        "marca": "Bones",
+        "precio": 20.00,
+        "imagen": "/images/ted.webp",
+        "categoria": "rodamiento"
+      },
+      {
+        "id": "b2",
+        "nombre": "Bronson Speed Co G3",
+        "tipo": "Ceramic",
+        "marca": "Bronson",
+        "precio": 35.00,
+        "imagen": "/images/reds.webp",
+        "categoria": "rodamiento"
+      }
+    ]
+  }
+}
+

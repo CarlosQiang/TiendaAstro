@@ -1,0 +1,60 @@
+---
+export interface Props {
+  producto: {
+    id: number;
+    nombre: string;
+    tipo: string;
+    precio: number;
+    imagen: string;
+  }
+}
+
+const { producto } = Astro.props;
+---
+
+<div class="producto-card">
+  <img src={producto.imagen} alt={producto.nombre} />
+  <h3>{producto.nombre}</h3>
+  <p>Categoría: {producto.tipo}</p>
+  <p class="precio">
+    {producto.precio !== undefined 
+      ? `$${producto.precio.toFixed(2)}` 
+      : 'Precio no disponible'}
+  </p>
+</div>
+
+<style>
+  .producto-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .producto-card:hover {
+    transform: scale(1.05);
+  }
+
+  .producto-card img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+
+  .producto-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .producto-card p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .producto-card .precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+</style>

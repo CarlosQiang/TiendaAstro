@@ -1,0 +1,48 @@
+---
+---
+
+<form id="searchForm" class="search-container">
+  <input 
+    type="text" 
+    id="searchInput" 
+    name="search"
+    placeholder="Buscar por nombre, marca, tipo..."
+    class="search-input"
+  />
+  <select id="categoryFilter" name="category" class="category-filter">
+    <option value="todos">Todas las categorías</option>
+    <option value="tabla">Tablas</option>
+    <option value="rueda">Ruedas</option>
+    <option value="eje">Ejes</option>
+    <option value="rodamiento">Rodamientos</option>
+  </select>
+</form>
+
+<style>
+  .search-container {
+    display: flex;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .category-filter {
+    padding: 0.5rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+  }
+
+
+</style>
+

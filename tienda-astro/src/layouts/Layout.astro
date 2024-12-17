@@ -1,0 +1,112 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter?.title || "Tienda de Skate"}</title>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: #4CAF50;
+    --accent-dark: #45a049;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: #c9c7c7; 
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+  .markdown {
+    width: 100%;
+    max-width: 1200px; 
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .markdown h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .markdown h2 {
+    color: #444;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .markdown p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .markdown ul, 
+  .markdown ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .markdown li {
+    margin-bottom: 0.5rem;
+  }
+
+  .markdown img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+
+  .back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+  }
+
+  .back-button:hover {
+    background-color: var(--accent-dark);
+  }
+</style>
